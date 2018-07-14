@@ -8,23 +8,116 @@
     tools:context=".frm_principal">
 
     <TextView
-        android:id="@+id/tvOiMundo"
+        android:id="@+id/tvTitulo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="5dp"
+        android:text="Título do Evento:"
         android:textSize="18sp"
         android:textStyle="bold" />
 
-    <Button
-        android:id="@+id/btListar"
+    <EditText
+        android:id="@+id/etTituloEvento"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/tvDescricao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="5dp"
+        android:text="Descrição:"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/etDescricao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/tvCategoria"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="10dp"
+        android:text="Categoria:"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/spnCategoria"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tvDataHoraInicio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Data e Hora Inicial:"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="5dp" />
+
+    <EditText
+        android:id="@+id/etDataHoraInicio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textAlignment="center"
+        android:inputType="datetime" />
+
+    <TextView
+        android:id="@+id/tvDataHoraFim"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Data e Hora Final:"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="5dp" />
+
+    <EditText
+        android:id="@+id/etDataHoraFim"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textAlignment="center"
+        android:inputType="datetime" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="match_parent"
+        android:layout_height="39dp"
+        android:layout_marginTop="3dp" />
+
+    <Button
+        android:id="@+id/btListar"
+        android:layout_width="289dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="17dp"
         android:text="Listar" />
 
     <Button
         android:id="@+id/btSalvar"
-        android:layout_width="match_parent"
+        android:layout_width="227dp"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="70dp"
         android:text="Salvar" />
+
+    <Button
+        android:id="@+id/btSair"
+        android:layout_width="155dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="104dp"
+        android:text="Sair" />
 
 </LinearLayout>
