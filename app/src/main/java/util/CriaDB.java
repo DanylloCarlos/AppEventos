@@ -4,13 +4,13 @@ import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
-public class criaDB extends SQLiteOpenHelper {
+public class CriaDB extends SQLiteOpenHelper {
 
     private static final String DB_NAME = "bdEventos.db";
     private static final int DB_VERSION = 1;
     private String sql;
 
-    public criaDB(Context context){
+    public CriaDB(Context context){
         super(context, DB_NAME, null, DB_VERSION);
     }
 

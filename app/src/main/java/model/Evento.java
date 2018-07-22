@@ -8,8 +8,8 @@ public class Evento {
     private String tituloEvento;
     private String descricao;
     private String categoria;
-    private SimpleDateFormat dataHoraInicio;
-    private SimpleDateFormat dataHoraFim;
+    private String dataHoraInicio;
+    private String dataHoraFim;
 
     public String getTituloEvento() {
         return tituloEvento;
@@ -35,19 +35,19 @@ public class Evento {
         this.categoria = categoria;
     }
 
-    public SimpleDateFormat getDataHoraInicio() {
+    public String getDataHoraInicio() {
         return dataHoraInicio;
     }
 
-    public void setDataHoraInicio(SimpleDateFormat dataHoraInicio) {
+    public void setDataHoraInicio(String dataHoraInicio) {
         this.dataHoraInicio = dataHoraInicio;
     }
 
-    public SimpleDateFormat getDataHoraFim() {
+    public String getDataHoraFim() {
         return dataHoraFim;
     }
 
-    public void setDataHoraFim(SimpleDateFormat dataHoraFim) {
+    public void setDataHoraFim(String dataHoraFim) {
         this.dataHoraFim = dataHoraFim;
     }
 }
